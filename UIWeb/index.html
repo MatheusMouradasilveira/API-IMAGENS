@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamento das Tanks</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="../JS/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="pai">
+        <h3>Gerenciamento de Tanks</h3>
+      </div>
+      <div id="filho" onClick="adicionarModal()">
+        <h3>Adicionar</h3>
+      </div>
+    </header>
+    <main>
+      <div id="listaTanks"></div>
+    </main>
+    <dialog id="dialogTank">
+      <div id="quadrado-preto"></div>
+    </dialog>
+    <dialog id="dialogAdd">
+      <div id="quadrado-preto2">
+        <h4 onclick="sairModal()">Voltar</h4>
+        <h2>Adicionar uma Tank:</h2>
+        <form id="formAdicionarTank">
+          <label for="id">ID:</label>
+          <input type="text" id="id" name="id" required />
+          <label for="tituloTank">Título:</label>
+          <input type="text" id="tituloTank" name="tituloTank" required />
+          <label for="exemploTank">Exemplo:</label>
+          <input type="text" id="exemploTank" name="exemploTank" required />
+          <label for="autorTank">Autor do Exemplo:</label>
+          <input type="text" id="autorTank" name="autorTank" required />
+          <label for="descricaoTank">Descrição:</label>
+          <input type="text" id="descricaoTank" name="descricaoTank" required />
+          <label for="anoTank">Ano de Fabricação:</label>
+          <input type="text" id="anoTank" name="anoTank" required />
+          <label for="paisTank">País de Origem:</label>
+          <input type="text" id="paisTank" name="paisTank" required />
+          <button type="button" onclick="adicionarTank()" class="botao">
+            Adicionar
+          </button>
+        </form>
+      </div>
+    </dialog>
+    <dialog id="dialogAlt">
+      <div id="quadrado-preto3">
+        <h4 onclick="sairModal3()">Voltar</h4>
+        <form id="formAdicionarTank">
+          <label for="id">ID:</label>
+          <input type="text" id="idAlt" name="id" required />
+          <label for="tituloTank">Título:</label>
+          <input type="text" id="tituloTankAlt" name="tituloTank" required />
+          <label for="exemploTank">Exemplo:</label>
+          <input type="text" id="exemploTankAlt" name="exemploTank" required />
+          <label for="autorTank">Autor do Exemplo:</label>
+          <input type="text" id="autorTankAlt" name="autorTank" required />
+          <label for="descricaoTank">Descrição:</label>
+          <input type="text" id="descricaoTankAlt" name="decricaoTank" required />
+          <label for="anoTank">Ano de Fabricação:</label>
+          <input type="text" id="anoTankAlt" name="anoTank" required />
+          <label for="paisTank">País de Origem:</label>
+          <input type="text" id="paisTankAlt" name="paisTank" required />
+          <input
+            type="text"
+            id="descricaoTankAlt"
+            name="descricaoTank"
+            required
+          />
+          <button type="button" onclick="alterarTank()" class="botao">
+            Alterar
+          </button>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>

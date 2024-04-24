@@ -1,0 +1,22 @@
+{
+  "Tank": [
+    {
+      "id": 1,
+      "titulo": "M7 Priest",
+      "descricao": "O M7 Priest foi uma artilharia autopropulsada dos Estados Unidos produzida durante a Segunda Guerra Mundial.",
+      "exemplo": "../Exemplos/tank1.jpg",
+      "autor": "American Locomotive Company (M7), Pressed Steel Car (M7B1), Federal Machine and Welder (M7)",
+      "ano": "1942",
+      "pais": "EUA"
+    },
+    {
+      "id": 2,
+      "titulo": "M10 Wolwerine",
+      "descricao": "The M10 tank destroyer, formally 3-inch Gun Motor Carriage M10, or M10 GMC was an American tank destroyer of World War II..",
+      "exemplo": "../Exemplos/tank2.jpg",
+      "autor": "Ford Motor Company",
+      "ano": "1945",
+      "pais": "EUA"
+    }
+  ]
+}
